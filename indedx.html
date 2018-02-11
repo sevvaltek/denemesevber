@@ -27,7 +27,7 @@
                 <a href="#">Misyon</a>
             </div>
         </div>
-
+        
         <div class="dropdown">
             <button class="dropbtn">
                 ETKINLIKLERIMIZ
@@ -47,16 +47,46 @@
             </form>
         </div>
     </div>
-    <div class="jumbotron jumbotron-fluid bckgrnd">
-        <div style="opacity:1">
-            <h2 class="introIEEE">Yaşar Üniversitesi Mühendislik Topluluğu<br /></h2>
-            <h5 class="intro"><i>Kulübümüz hakkında daha fazla şey öğrenmek için sosyal medya hesaplarımızdan bizi takip et!</i></h5>
-            <br />
-            <div align="center">
-                <input type="button" value="Bizi Tanı" class="btn btn-info btnshdw" onclick="cntAc();counter()" />
+  
+        <div class="jumbotron jumbotron-fluid bckgrnd">
+            <div style="opacity:1">
+                <h2 class="introIEEE">Yaşar Üniversitesi Mühendislik Topluluğu<br /></h2>
+                <h5 class="intro"><i>Kulübümüz hakkında daha fazla şey öğrenmek için sosyal medya hesaplarımızdan bizi takip et!</i></h5>
+                <br />
+                <div align="center">
+                    <input type="button" value="Bizi Tanı" class="btn btn-info btnshdw" onclick="cntAc();counter()" />
+                </div>
             </div>
         </div>
-    </div>
+        <div id="tecrubeler" class="collapse" style="visibility:hidden">
+            <div class="row" align="center">
+                <div class="col-md-3"></div>
+                <div class="col-md-2">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/handshake.png" width="50" height="50" class="d-inline-block align-top" alt="9 Yıllık Tecrübe">
+                        <h1 id="yil">9</h1>
+                        <p style="font-size:medium">Yıllık Tecrübe</p>
+                    </a>
+                </div>
+                <div class="col-md-2">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/teamwork.png" width="50" height="50" class="d-inline-block align-top" alt="350 Üye">
+                        <h1 id="uye" >350</h1>
+                        <p style="font-size:medium">Üye</p>
+                    </a>
+                </div>
+                <div class="col-md-2 ">
+                    <a class="navbar-brand" href="#">
+                        <img src="image/id-card.png" width="50" height="50" class="d-inline-block align-top" alt="2 Etkinlik">
+                        <h1 id="etkinlik">2</h1>
+                        <p style="font-size:medium">Etkinlik</p>
+                    </a>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+
+
     <script>
         function cntAc() {
             if (document.getElementById("tecrubeler").style.visibility == 'hidden') {
@@ -117,33 +147,107 @@
             }
         }
     </script>
-    <div id="tecrubeler" class="collapse"  style="visibility:hidden">
-        <div class="row" align="center">
-            <div class="col-1 col-sm-4">
-                <a class="navbar-brand" href="#">
-                    <img src="image/handshake.png" width="30" height="30" class="d-inline-block align-top" alt="9 Yıllık Tecrübe">
-                    <h1 id="yil">9</h1>
-                    <p>Yıllık Tecrübe</p>
-                </a>
-            </div>
-            <div class="col-1 col-sm-4">
-                <a class="navbar-brand" href="#">
-                    <img src="image/teamwork.png" width="30" height="30" class="d-inline-block align-top" alt="350 Üye">
-                    <h1 id="uye">350</h1>
-                    <p>Üye</p>
-                </a>
-            </div>
-            <div class="col-1 col-sm-4 ">
-                <a class="navbar-brand" href="#">
-                    <img src="image/id-card.png" width="30" height="30" class="d-inline-block align-top" alt="2 Etkinlik">
-                    <h1 id="etkinlik">2</h1>
-                    <p>Etkinlik</p>
-                </a>
-            </div>
+    <div class="container">
+
+        <div class="item active mySlides">
+            <img src="image/ekip.jpg">
         </div>
+
+        <div class="item mySlides">
+            <img src="image/gdg.png">
+        </div>
+
+        <div class="item mySlides">
+            <img src="image/kampus.jpg">
+        </div>
+
+        <div class="item mySlides">
+            <img src="image/yasar.jpg">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <ul class="nav nav-pills nav-justified" style="height:125px;">
+            <li data-target="#myCarousel" data-slide-to="0" class="liSld demo" style="width:275px;" onClick="currentSlide(1)"> <h1 style="width:50px; height:50px; background-color:black; border-radius:100px; opacity:0.9; color:white; text-align:center; float:left">1</h1>Ekip<small align="bottom"><br>Lorem ipsum dolor sit</small></li>
+            <li data-target="#myCarousel" data-slide-to="1" class="liSld demo" style="width:275px;" onClick="currentSlide(2)"> <h1 style="width:50px; height:50px; background-color:black; border-radius:100px; opacity:0.9; color:white; text-align:center; float:left">2</h1><small><br>Lorem ipsum dolor sit</small></li>
+            <li data-target="#myCarousel" data-slide-to="2" class="liSld demo" style="width:275px;" onClick="currentSlide(3)"> 
+
+            <h1 style="width:50px; height:50px; background-color:black; border-radius:100px; opacity:0.9; color:white; text-align:center; float:left">3
+            </h1><small><br>Lorem ipsum dolor sit</small>
+            </li>
+            <li data-target="#myCarousel" data-slide-to="3" class="liSld demo" style="width:275px;" onClick="currentSlide(4)"> <h1 style="width:50px; height:50px; background-color:black; border-radius:100px; opacity:0.9; color:white; text-align:center; float:left">4</h1><small><br>Lorem ipsum dolor sit</small></li>
+        </ul>
     </div>
-  
-    <div class="slideshow-container">
+    <script>
+            var slideIndex = 0;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+			showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("demo");
+			if (n > slides.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = slides.length}
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " active";
+				setTimeout(showSlides, 10000); // Change image every 2 seconds
+		}
+    </script>
+
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+          
+        }
+    </script>
+
+
+
+    <!--<div class="slideshow-container">
 
         <div class="mySlides active">
             <div class="numbertext">1 / 3</div>
@@ -173,9 +277,9 @@
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+    </div>-->
 
-    <script>
+    <!--<script>
         var slideIndex = 1;
         showSlides(slideIndex);
 
@@ -202,7 +306,7 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
-    </script>
+    </script>-->
 
     <div class="row">
         <div class="col-sm-4">
